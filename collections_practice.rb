@@ -52,9 +52,9 @@ def add_s (array)
         arr.push(x)
         end
     end
-   arr
+    arr
 end
-add_s(array)
+
 
 
 
