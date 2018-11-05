@@ -19,6 +19,42 @@ def reverse_array (array)
      array.reverse
 end
 
-def kesha_maker (array)
-  
+def kesha_maker (array) 
+    array.each do |x|
+        x[2] = "$"
+    end
 end
+
+def find_a (array)
+    arr = []
+    array.each do |x |
+        if x[0]=="a"
+            arr << x
+        end
+    end
+    arr
+  end
+
+  def sum_array (array)
+   sum = 0
+    array.each do |x|
+    sum = sum + x
+    end
+    sum
+end
+
+def add_s (array)
+    arr = []
+    array.each do |x|
+        if x !=array[1]
+       arr.push(x+"s")
+        else
+        arr.push(x)
+        end
+    end
+   arr
+end
+add_s(array)
+
+
+
